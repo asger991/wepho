@@ -1,21 +1,19 @@
-import Header from './Header'
+import { Layout } from "antd";
+import Header from "./Header";
+import Footer from "./Footer";
 
-const Layout = props => (
-    <div style={layoutStyle}>
+const LayoutContainer = (props) => {
+  return (
+    <Layout style={layoutStyle}>
       <Header />
-      {/* <div style={pageStyle}> */}
-        {props.children}
-      {/* </div> */}
-    </div>
-);
-
-const layoutStyle = {
-    margin: '-8px',
-    border: '1px solid #DDD'
+      {props.children}
+      <Footer />
+    </Layout>
+  );
 };
 
-// const pageStyle = {
-//     padding: '0 10rem'
-// }
+const layoutStyle = {
+  margin: "-8px",
+};
 
-export default Layout;
+export default LayoutContainer;

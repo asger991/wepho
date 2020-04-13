@@ -1,18 +1,18 @@
-import Head from 'next/head'
-import Layout from '../components/Layout'
-import Page from '../components/Page'
-import PictureWindows from '../components/PictureWindows'
-import SearchBox from '../components/SearchBox';
+import LayoutContainer from "../components/Layout";
+import Page from "../components/Page";
+import PictureWindows from "../components/PictureWindows";
+import SearchBox from "../components/SearchBox";
+import AboutText from "../components/AboutText";
+// import "antd/dist/antd.css";
 
 const Home = () => (
-  <Layout>
+  <LayoutContainer>
     <Page>
       <PictureWindows />
       <SearchBox />
-
+      <AboutText />
     </Page>
-  </Layout>
-)
+  </LayoutContainer>
+);
 
-export default Home
-
+export default Home;

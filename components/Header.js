@@ -1,11 +1,24 @@
 import Link from "next/link";
+import { Row, Col } from "antd";
+import { InstagramOutlined } from "@ant-design/icons";
 
 const Header = () => (
   <div style={headerStyle}>
     <Link href="/">
       <a style={linkStyle}>We∙pho</a>
     </Link>
-    <span style={subtitleStyle}>Bryllupsfoto & Booking</span>
+    <div>
+      {/* <Row>
+        <Col span={12} offset={12}> */}
+      <span style={subtitleStyle}>
+        Bryllupsfoto & Booking
+        <span>
+          <InstagramOutlined style={iconStyle} />
+        </span>
+      </span>
+      {/* </Col>
+      </Row> */}
+    </div>
   </div>
 );
 
@@ -32,6 +45,14 @@ const subtitleStyle = {
   fontFamily: "Hiragino Sans",
   fontSize: "14px",
   marginBottom: "30px",
+  display: "flex",
+  justifyContent: "space-between",
+  marginLeft: "33rem",
+};
+
+const iconStyle = {
+  fontSize: "30px",
+  marginLeft: "30rem",
 };
 
 export default Header;

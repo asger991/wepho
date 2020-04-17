@@ -1,33 +1,4 @@
 const AboutText = () => {
-  const boxStyle = {
-    boxSizing: "border-box",
-    display: "flex",
-    alignContent: "center",
-    flexDirection: "column",
-    alignItems: "center",
-    width: "65%",
-    margin: "23rem 0",
-  };
-
-  const headlineStyle = {
-    fontFamily: "Kaiti TC",
-    fontWeight: "100",
-    fontSize: "70px",
-  };
-
-  const textStyle = {
-    textAlign: "center",
-    fontFamily: "Kaiti TC",
-    fontSize: "35px",
-    lineHeight: "1.5",
-    fontStyle: "italic",
-  };
-
-  const signedStyle = {
-    fontSize: "45px",
-    lineHeight: "2",
-  };
-
   return (
     <div style={boxStyle}>
       <h1 style={headlineStyle}>Ideen bag We∙pho</h1>
@@ -48,6 +19,36 @@ const AboutText = () => {
       <br /> <span style={signedStyle}> - We•pho </span>
     </div>
   );
+};
+
+const boxStyle = {
+  boxSizing: "border-box",
+  display: "flex",
+  alignContent: "center",
+  flexDirection: "column",
+  alignItems: "center",
+  width: "65%",
+  margin: "23rem 0 0 0",
+};
+
+const headlineStyle = {
+  fontFamily: "Kaiti TC",
+  fontWeight: "100",
+  fontSize: "70px",
+};
+
+const textStyle = {
+  textAlign: "center",
+  fontFamily: "Kaiti TC",
+  fontSize: "30px",
+  lineHeight: "1.3",
+  fontStyle: "italic",
+};
+
+const signedStyle = {
+  fontSize: "45px",
+  lineHeight: "2",
+  letterSpacing: "3px",
 };
 
 export default AboutText;

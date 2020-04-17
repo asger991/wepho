@@ -2,7 +2,7 @@ import { Divider, Row, Col } from "antd";
 
 const Footer = () => (
   <div style={footerStyle}>
-    <Divider style={dividerStyle} />
+    <div style={dividerStyle} />
     <div style={pictureContainer}>
       <div style={pictureBox}>
         <img src="/cake.png" width="300px" height="200px" />
@@ -37,10 +37,9 @@ const pictureContainer = {
 };
 
 const pictureBox = {
-  marginTop: "3rem",
+  margin: "3rem 1rem",
   height: "200px",
   width: "300px",
-  padding: "0 2rem",
   position: "relative",
 };
 

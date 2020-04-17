@@ -1,22 +1,23 @@
-// import React, { useState } from "react";
-// import {
-//   Form,
-//   Row,
-//   Col,
-//   Input,
-//   Button,
-//   DatePicker,
-//   Select,
-//   Cascader,
-//   AutoComplete,
-// } from "antd";
+import React, { useState } from "react";
+import {
+  Form,
+  Row,
+  Col,
+  Input,
+  Button,
+  DatePicker,
+  Select,
+  Cascader,
+  AutoComplete,
+} from "antd";
+import { CameraOutlined } from "@ant-design/icons";
 
 const SearchForm = () => {
-  // const [expand, setExpand] = useState(false);
-  // const [form] = Form.useForm();
+  const [expand, setExpand] = useState(false);
+  const [form] = Form.useForm();
 
-  // const { Option } = Select;
-  // const AutoCompleteOption = AutoComplete.Option;
+  const { Option } = Select;
+  const AutoCompleteOption = AutoComplete.Option;
 
   const budgetRange = [
     {
@@ -37,75 +38,162 @@ const SearchForm = () => {
     },
   ];
 
-  // const onFinish = (values) => {
-  //   console.log("Received values of form: ", values);
-  // };
+  const regionOptions = [
+    {
+      value: "hovedstaden",
+      label: "Hovedstaden",
+    },
+    {
+      value: "sjælland",
+      label: "Sjælland",
+    },
+    {
+      value: "syddanmark",
+      label: "Syddanmark",
+    },
+    {
+      value: "midtjylland",
+      label: "Midtjylland",
+    },
+    {
+      value: "nordjylland",
+      label: "Nordjylland",
+    },
+  ];
 
-  const boxStyle = {
-    boxSizing: "border-box",
-    display: "flex",
-    alignContent: "center",
-    flexDirection: "column",
-    alignItems: "center",
-    width: "80%",
-  };
-
-  const headlineStyle = {
-    fontFamily: "Kaiti TC",
-    fontWeight: "100",
-    fontSize: "40px",
-    color: "#707070",
-  };
-
-  const formStyle = {
-    display: "flex",
-    justifyContent: "center",
-    flexWrap: "wrap",
-    alignItems: "center",
-  };
-
-  const inputStyle = {
-    width: "45%",
-    backgroundColor: "#FCF7EF",
-    color: "#707070",
-    margin: "1rem 1rem",
-    textAlign: "center",
-    lineHeight: "55px",
-    fontSize: "25px",
-    fontFamily: "Kaiti TC",
-  };
-
-  const buttonStyle = {
-    width: "35%",
-    backgroundColor: "#DADCD5",
-    color: "#707070",
-    margin: "1rem 1rem",
-    textAlign: "center",
-    lineHeight: "55px",
-    fontSize: "30px",
-    fontFamily: "Kaiti TC",
+  const onFinish = (values) => {
+    console.log("Received values of form: ", values);
   };
 
   return (
     <div style={boxStyle}>
       <div>
-        <h1 style={headlineStyle}>FIND DIN FOTOGRAF HER</h1>
+        <h1 style={headlineStyle}>
+          <CameraOutlined /> FIND DIN FOTOGRAF HER
+        </h1>
       </div>
-      <div>
-        <form style={formStyle}>
-          <input style={inputStyle} type="text" placeholder="Budget" />
-          <input style={inputStyle} type="text" placeholder="Region" />
-          <input
-            style={inputStyle}
-            type="text"
-            placeholder="Halv dag/hel dag"
-          />
-          <input style={inputStyle} type="text" placeholder="Bryllupsdato" />
-          <input style={buttonStyle} type="submit" value="Søg" />
-        </form>
-      </div>
+      <Form
+        form={form}
+        name="advanced_search"
+        className="ant-advanced-search-form"
+        onFinish={onFinish}
+      >
+        <Row gutter={24} style={formStyle}>
+          <Col span={8}>
+            <Form.Item
+              rules={[
+                {
+                  required: true,
+                  message: "Input something!",
+                },
+              ]}
+              style={inputStyle}
+              // noStyle={true}
+            >
+              <DatePicker
+                placeholder="Bryllupsdato"
+                bordered={false}
+                style={{ backgroundColor: `#FCF7EF` }}
+                size="large"
+              />
+            </Form.Item>
+          </Col>
+          <Col span={8}>
+            <Form.Item
+              rules={[
+                {
+                  required: true,
+                  message: "Input something!",
+                },
+              ]}
+              style={inputStyle}
+            >
+              <Cascader
+                options={budgetRange}
+                placeholder="Budget"
+                bordered={false}
+                size="large"
+                style={{ backgroundColor: `#FCF7EF` }}
+              />
+            </Form.Item>
+          </Col>
+          <Col span={8}>
+            <Form.Item
+              rules={[
+                {
+                  required: true,
+                  message: "Input something!",
+                },
+              ]}
+              style={inputStyle}
+            >
+              <Cascader
+                options={regionOptions}
+                placeholder="Region"
+                bordered={false}
+                size="large"
+                style={{ backgroundColor: `#FCF7EF` }}
+              />
+            </Form.Item>
+          </Col>
+        </Row>
+        <Row>
+          <Col span={24} style={{ textAlign: "center" }}>
+            <Button type="primary" htmlType="submit" style={buttonStyle}>
+              Søg
+            </Button>
+          </Col>
+        </Row>
+      </Form>
     </div>
   );
+};
+
+const boxStyle = {
+  boxSizing: "border-box",
+  display: "flex",
+  alignContent: "center",
+  flexDirection: "column",
+  alignItems: "center",
+  width: "80%",
+};
+
+const headlineStyle = {
+  fontFamily: "Kaiti TC",
+  fontWeight: "100",
+  fontSize: "40px",
+  color: "#707070",
+  marginTop: "1rem",
+};
+
+const formStyle = {
+  display: "flex",
+  justifyContent: "center",
+  flexWrap: "wrap",
+  alignItems: "center",
+};
+
+const inputStyle = {
+  backgroundColor: "#FCF7EF",
+  color: "#707070",
+  margin: "1rem 1rem",
+  // textAlign: "center",
+  lineHeight: "55px",
+  fontSize: "25px !important",
+  fontFamily: "Kaiti TC",
+};
+
+const buttonStyle = {
+  width: "35%",
+  height: "auto",
+  backgroundColor: "#DADCD5",
+  color: "#707070",
+  margin: "1rem 1rem",
+  textAlign: "center",
+  lineHeight: "55px",
+  fontSize: "30px",
+  fontFamily: "Kaiti TC",
+  border: "none",
 };
 
 export default SearchForm;

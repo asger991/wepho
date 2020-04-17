@@ -51,8 +51,8 @@ const imageStyle = {
 };
 
 const overlay = {
-  // backgroundColor: "grey",
-  // opacity: "0.7",
+  // backgroundColor: "black",
+  // opacity: "0.3",
   color: "#fff",
   fontSize: "35px",
   lineHeight: "1.5",

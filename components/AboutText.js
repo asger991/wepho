@@ -4,7 +4,7 @@ const AboutText = () => {
       <h1 style={headlineStyle}>Ideen bag We∙pho</h1>
       <p style={textStyle}>
         Hos We•pho har vi gjort det nemt at få et overblik, når man er på udkig
-        efter sin bryllupsfotograf. Op til jeres dag, skal der være så få
+        efter sin bryllupsfotograf. Op til jeres dag skal der være så få
         bekymringer som muligt, så man kan slappe af og nyde, at den vigtigste
         dag i ens liv forløber perfekt.
         <br /> <br /> Hos We•pho kan du søge ud fra kriterier, som passer netop
@@ -16,7 +16,6 @@ const AboutText = () => {
         We•pho’s særlige tilbudspriser – det er gratis og uforpligtende. Vi
         glæder os til at booke Jeres formøde.
       </p>
-      <br /> <span style={signedStyle}> - We•pho </span>
     </div>
   );
 };
@@ -28,7 +27,7 @@ const boxStyle = {
   flexDirection: "column",
   alignItems: "center",
   width: "65%",
-  margin: "23rem 0 0 0",
+  margin: "20rem 0 0 0",
 };
 
 const headlineStyle = {
@@ -38,11 +37,10 @@ const headlineStyle = {
 };
 
 const textStyle = {
-  textAlign: "center",
+  textAlign: "justify",
   fontFamily: "Kaiti TC",
   fontSize: "30px",
   lineHeight: "1.3",
-  fontStyle: "italic",
 };
 
 const signedStyle = {

@@ -25,7 +25,7 @@ const footerStyle = {
   flexDirection: "column",
   justifyContent: "center",
   alignItems: "center",
-  backgroundColor: "#FAF3E9",
+  backgroundColor: "#FCF7EF",
   height: "auto",
   boxSizing: "border-box",
 };

@@ -6,18 +6,18 @@ import { Row, Col } from "antd";
 const SearchBox = () => {
   return (
     <>
-      <Row style={containerStyle}>
-        <Col span={16} offset={4} style={boxStyle}>
+      <div style={containerStyle}>
+        <div style={boxStyle}>
           <SearchForm />
-        </Col>
-      </Row>
+        </div>
+      </div>
     </>
   );
 };
 
 const boxStyle = {
   boxSizing: "border-box",
-  backgroundColor: "#F4EADE",
+  backgroundColor: "#FCF7EF",
   height: "auto",
   width: "auto",
   display: "flex",

@@ -78,8 +78,8 @@ const SearchForm = () => {
         className="ant-advanced-search-form"
         onFinish={onFinish}
       >
-        <Row gutter={24} style={formStyle}>
-          <Col span={8}>
+        <Row gutter={22} offset={1} style={formStyle}>
+          <Col span={6}>
             <Form.Item
               rules={[
                 {
@@ -93,12 +93,15 @@ const SearchForm = () => {
               <DatePicker
                 placeholder="Bryllupsdato"
                 bordered={false}
-                style={{ backgroundColor: `#FCF7EF` }}
+                style={{
+                  backgroundColor: `#FCFFF7`,
+                  width: `-webkit-fill-available`,
+                }}
                 size="large"
               />
             </Form.Item>
           </Col>
-          <Col span={8}>
+          <Col span={6}>
             <Form.Item
               rules={[
                 {
@@ -113,11 +116,11 @@ const SearchForm = () => {
                 placeholder="Budget"
                 bordered={false}
                 size="large"
-                style={{ backgroundColor: `#FCF7EF` }}
+                style={{ backgroundColor: `#FCFFF7` }}
               />
             </Form.Item>
           </Col>
-          <Col span={8}>
+          <Col span={6}>
             <Form.Item
               rules={[
                 {
@@ -132,13 +135,11 @@ const SearchForm = () => {
                 placeholder="Region"
                 bordered={false}
                 size="large"
-                style={{ backgroundColor: `#FCF7EF` }}
+                style={{ backgroundColor: `#FCFFF7` }}
               />
             </Form.Item>
           </Col>
-        </Row>
-        <Row>
-          <Col span={24} style={{ textAlign: "center" }}>
+          <Col span={6} style={{ textAlign: "center" }}>
             <Button type="primary" htmlType="submit" style={buttonStyle}>
               Søg
             </Button>
@@ -150,12 +151,12 @@ const SearchForm = () => {
 };
 
 const boxStyle = {
-  boxSizing: "border-box",
   display: "flex",
   alignContent: "center",
   flexDirection: "column",
-  alignItems: "center",
-  width: "80%",
+  // alignItems: "center",
+  // change to padding
+  width: "90%",
 };
 
 const headlineStyle = {
@@ -163,20 +164,19 @@ const headlineStyle = {
   fontWeight: "100",
   fontSize: "40px",
   color: "#707070",
-  marginTop: "1rem",
+  margin: "1rem 0 0 11px",
 };
 
 const formStyle = {
   display: "flex",
   justifyContent: "center",
-  flexWrap: "wrap",
   alignItems: "center",
 };
 
 const inputStyle = {
-  backgroundColor: "#FCF7EF",
+  backgroundColor: "#FCFFF7",
   color: "#707070",
-  margin: "1rem 1rem",
+  margin: "1rem 0.5rem",
   // textAlign: "center",
   lineHeight: "55px",
   fontSize: "25px !important",
@@ -184,8 +184,8 @@ const inputStyle = {
 };
 
 const buttonStyle = {
-  width: "35%",
-  height: "auto",
+  width: "-webkit-fill-available",
+  height: "-webkit-fill-available",
   backgroundColor: "#DADCD5",
   color: "#707070",
   margin: "1rem 1rem",
@@ -194,6 +194,7 @@ const buttonStyle = {
   fontSize: "30px",
   fontFamily: "Kaiti TC",
   border: "none",
+  padding: "0",
 };
 
 export default SearchForm;

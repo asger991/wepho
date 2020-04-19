@@ -21,11 +21,11 @@ const Footer = () => (
 );
 
 const footerStyle = {
+  backgroundColor: "#FCF7EF",
   display: "flex",
   flexDirection: "column",
   justifyContent: "center",
   alignItems: "center",
-  backgroundColor: "#FCF7EF",
   height: "auto",
   boxSizing: "border-box",
 };

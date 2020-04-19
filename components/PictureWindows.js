@@ -1,8 +1,29 @@
+import { Row, Col } from "antd";
+
 const PictureWindows = () => (
   <>
     <div style={infoTextStyle}>
       <p>Søg og sammenlign nemt priser på bryllupsfotografer</p>
     </div>
+
+    {/* <Row style={gridStyle}>
+      <Col span={8} style={pictureBox}>
+        <img src="/table.png" width="350px" height="550px" />
+        <div style={overlay}>
+          VI HAR <br /> GJORT DET NEMT
+        </div>
+      </Col>
+      <Col span={8} style={pictureBox}>
+        <img src="/walk.png" width="350px" height="550px" style={imageStyle} />
+        <div style={overlay}>BOOKING</div>
+      </Col>
+      <Col span={8} style={pictureBox}>
+        <img src="/weil.png" width="350px" height="550px" />
+        <div style={overlay}>
+          WE∙PHO'S <br /> FAVORITTER
+        </div>
+      </Col>
+    </Row> */}
     <div style={gridStyle}>
       <div style={pictureBox}>
         <img src="/table.png" width="350px" height="550px" />
@@ -33,14 +54,13 @@ const infoTextStyle = {
 
 const gridStyle = {
   display: "flex",
-  justifyContent: "center",
-  width: "80%",
+  justifyContent: "space-around",
+  width: "100%",
 };
 
 const pictureBox = {
-  height: "650px",
-  width: "450px",
-  margin: "0 4rem",
+  display: "flex",
+  justifyContent: "center",
   position: "relative",
   fontFamily: "Kaiti TC",
 };

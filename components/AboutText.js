@@ -1,7 +1,7 @@
 const AboutText = () => {
   return (
     <div style={boxStyle}>
-      <h1 style={headlineStyle}>Ideen bag We∙pho</h1>
+      <h1 style={headlineStyle}>Ideen bag</h1>
       <p style={textStyle}>
         Hos We•pho har vi gjort det nemt at få et overblik, når man er på udkig
         efter sin bryllupsfotograf. Op til jeres dag skal der være så få
@@ -16,6 +16,7 @@ const AboutText = () => {
         We•pho’s særlige tilbudspriser – det er gratis og uforpligtende. Vi
         glæder os til at booke Jeres formøde.
       </p>
+      <span style={signedStyle}>- We•pho</span>
     </div>
   );
 };
@@ -27,13 +28,15 @@ const boxStyle = {
   flexDirection: "column",
   alignItems: "center",
   width: "65%",
-  margin: "20rem 0 0 0",
+  height: "100vh",
+  margin: "10rem 0 0 0",
 };
 
 const headlineStyle = {
   fontFamily: "Kaiti TC",
   fontWeight: "100",
   fontSize: "70px",
+  color: "#373F51",
 };
 
 const textStyle = {

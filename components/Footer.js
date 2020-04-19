@@ -1,5 +1,3 @@
-import { Divider, Row, Col } from "antd";
-
 const Footer = () => (
   <div style={footerStyle}>
     <div style={dividerStyle} />

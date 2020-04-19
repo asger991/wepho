@@ -3,13 +3,12 @@ import Page from "../components/Page";
 import PictureWindows from "../components/PictureWindows";
 import SearchBox from "../components/SearchBox";
 import AboutText from "../components/AboutText";
-// import "antd/dist/antd.css";
 
 const Home = () => (
   <LayoutContainer>
     <Page>
       <PictureWindows />
-      <SearchBox />
+      <SearchBox heading="FIND DIN FOTOGRAF HER" />
       <AboutText />
     </Page>
   </LayoutContainer>

@@ -1,14 +1,11 @@
-import SearchForm1 from "./SearchForm1";
 import SearchForm from "./SearchForm";
-// import Form from "antd/lib/form/Form";
-import { Row, Col } from "antd";
 
-const SearchBox = () => {
+const SearchBox = (heading, text) => {
   return (
     <>
       <div style={containerStyle}>
         <div style={boxStyle}>
-          <SearchForm />
+          <SearchForm heading={heading} text={text} />
         </div>
       </div>
     </>

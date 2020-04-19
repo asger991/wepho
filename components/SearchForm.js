@@ -12,7 +12,7 @@ import {
 } from "antd";
 import { CameraOutlined } from "@ant-design/icons";
 
-const SearchForm = () => {
+const SearchForm = ({ heading, text }) => {
   const [expand, setExpand] = useState(false);
   const [form] = Form.useForm();
 
@@ -68,9 +68,19 @@ const SearchForm = () => {
   return (
     <div style={boxStyle}>
       <div>
-        <h1 style={headlineStyle}>
-          <CameraOutlined /> FIND DIN FOTOGRAF HER
-        </h1>
+        {heading && (
+          <h1 style={headlineStyle}>
+            <CameraOutlined />
+            {heading}
+            {/* FIND DIN FOTOGRAF HER */}
+          </h1>
+        )}
+        {text && (
+          <p style={subtHeadingStyle}>
+            {text}
+            {/* Dine søgekriterier */}
+          </p>
+        )}
       </div>
       <Form
         form={form}
@@ -163,6 +173,14 @@ const headlineStyle = {
   fontFamily: "Kaiti TC",
   fontWeight: "100",
   fontSize: "40px",
+  color: "#707070",
+  margin: "1rem 0 0 11px",
+};
+
+const subtHeadingStyle = {
+  fontFamily: "Kaiti TC",
+  fontWeight: "100",
+  fontSize: "20px",
   color: "#707070",
   margin: "1rem 0 0 11px",
 };

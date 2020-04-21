@@ -8,7 +8,7 @@ const Home = () => (
   <LayoutContainer>
     <Page>
       <PictureWindows />
-      <SearchBox heading="FIND DIN FOTOGRAF HER" />
+      <SearchBox heading="FIND DIN FOTOGRAF HER" marginTop="6" />
       <AboutText />
     </Page>
   </LayoutContainer>

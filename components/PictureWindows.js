@@ -56,6 +56,7 @@ const gridStyle = {
   display: "flex",
   justifyContent: "space-around",
   width: "100%",
+  marginBottom: "6rem",
 };
 
 const pictureBox = {

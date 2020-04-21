@@ -72,15 +72,9 @@ const SearchForm = ({ heading, text }) => {
           <h1 style={headlineStyle}>
             <CameraOutlined />
             {heading}
-            {/* FIND DIN FOTOGRAF HER */}
           </h1>
         )}
-        {text && (
-          <p style={subtHeadingStyle}>
-            {text}
-            {/* Dine søgekriterier */}
-          </p>
-        )}
+        {text && <p style={subtHeadingStyle}>{text}</p>}
       </div>
       <Form
         form={form}

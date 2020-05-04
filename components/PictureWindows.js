@@ -37,7 +37,9 @@ const PictureWindows = () => (
       </div>
       <div style={pictureBox}>
         <img src="/weil.png" width="350px" height="550px" />
-        <div style={overlay}>WE∙PHO'S FAVORITTER</div>
+        <div style={overlay}>
+          INSPIRATION <br /> FRA WE∙PHO
+        </div>
       </div>
     </div>
   </>

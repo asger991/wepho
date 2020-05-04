@@ -70,9 +70,9 @@ const SearchBox = ({ heading, text }) => {
   return (
     <>
       <div style={containerStyle}>
-        <div style={boxStyle}>
+        <div style={containerStyle}>
           {/* <SearchForm heading={heading} text={text} /> */}
-          <div style={innerBoxStyle}>
+          <div style={innercontainerStyle}>
             <div>
               {heading && (
                 <h1 style={headlineStyle}>
@@ -168,28 +168,25 @@ const SearchBox = ({ heading, text }) => {
   );
 };
 
-const boxStyle = {
+const containerStyle = {
   boxSizing: "border-box",
   backgroundColor: "#FCF7EF",
   height: "auto",
-  width: "auto",
+  width: "100%",
   display: "flex",
   boxShadow: "6px 6px 0px #CBC8C8",
   justifyContent: "center",
   // marginTop: "6rem",
 };
 
-const containerStyle = {
-  width: "100%",
-};
-
-const innerBoxStyle = {
+const innercontainerStyle = {
   display: "flex",
   alignContent: "center",
   flexDirection: "column",
   // alignItems: "center",
   // change to padding
   width: "90%",
+  margin: "10px 0",
 };
 
 const headlineStyle = {

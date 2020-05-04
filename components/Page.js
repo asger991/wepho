@@ -8,6 +8,7 @@ const pageStyle = {
   justifyContent: "center",
   alignItems: "center",
   flexDirection: "column",
+  marginTop: "180px",
 };
 
 export default Page;

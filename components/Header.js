@@ -30,6 +30,9 @@ const headerStyle = {
   alignItems: "center",
   justifyContent: "space-between",
   flexDirection: "column",
+  position: "fixed",
+  top: "0px",
+  zIndex: "2",
 };
 
 const linkContainerStyle = {

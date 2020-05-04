@@ -66,7 +66,7 @@ const SearchForm = ({ heading, text }) => {
   };
 
   return (
-    <div style={boxStyle}>
+    <div style={containerStyle}>
       <div>
         {heading && (
           <h1 style={headlineStyle}>
@@ -154,7 +154,7 @@ const SearchForm = ({ heading, text }) => {
   );
 };
 
-const boxStyle = {
+const containerStyle = {
   display: "flex",
   alignContent: "center",
   flexDirection: "column",

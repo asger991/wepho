@@ -1,6 +1,6 @@
 const AboutText = () => {
   return (
-    <div style={boxStyle}>
+    <div style={containerStyle}>
       <h1 style={headlineStyle}>Ideen bag</h1>
       <p style={textStyle}>
         Hos We•pho har vi gjort det nemt at få et overblik, når man er på udkig
@@ -21,7 +21,7 @@ const AboutText = () => {
   );
 };
 
-const boxStyle = {
+const containerStyle = {
   boxSizing: "border-box",
   display: "flex",
   alignContent: "center",

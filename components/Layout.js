@@ -2,6 +2,8 @@ import { Layout } from "antd";
 import Header from "./Header";
 import Footer from "./Footer";
 
+// TODO: setup with ant layout
+
 const LayoutContainer = (props) => {
   return (
     <Layout style={layoutStyle}>

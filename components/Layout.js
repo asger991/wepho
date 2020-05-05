@@ -8,7 +8,7 @@ const LayoutContainer = (props) => {
   return (
     <Layout style={layoutStyle}>
       <Header />
-      {props.children}
+      <div style={containerStyle}>{props.children}</div>
       <Footer />
     </Layout>
   );
@@ -16,6 +16,17 @@ const LayoutContainer = (props) => {
 
 const layoutStyle = {
   margin: "-8px",
+};
+
+const containerStyle = {
+  backgroundColor: "#FCFFF7",
+  padding: "3rem 10rem",
+  height: "100%",
+  display: "flex",
+  justifyContent: "center",
+  alignItems: "center",
+  flexDirection: "column",
+  marginTop: "180px",
 };
 
 export default LayoutContainer;

@@ -25,7 +25,6 @@ const Package = () => {
 };
 
 const packageStyle = {
-  fontFamily: "Kaiti TC",
   textAlign: "left",
   color: "#707070",
   display: "flex",
@@ -47,7 +46,6 @@ const buttonStyle = {
   margin: "0.5rem 0",
   textAlign: "center",
   fontSize: "20px",
-  fontFamily: "Kaiti TC",
   border: "none",
   padding: "5px",
   alignSelf: "end",

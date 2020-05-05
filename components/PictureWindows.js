@@ -50,7 +50,6 @@ const infoTextStyle = {
   justifyContent: "flex-end",
   marginRight: "10rem",
   marginLeft: "auto",
-  fontFamily: "kaiti TC",
   fontSize: "large",
 };
 
@@ -65,7 +64,6 @@ const pictureBox = {
   display: "flex",
   justifyContent: "center",
   position: "relative",
-  fontFamily: "Kaiti TC",
 };
 
 const imageStyle = {

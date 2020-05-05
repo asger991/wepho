@@ -28,7 +28,6 @@ const UserBio = () => {
 const bioStyle = {
   display: "flex",
   flexDirection: "column",
-  fontFamily: "Kaiti TC",
   color: "#707070",
 };
 

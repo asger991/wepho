@@ -25,7 +25,6 @@ const SearchResults = () => (
 );
 
 const headerStyle = {
-  fontFamily: "Kaiti TC",
   fontWeight: "500",
   fontSize: "26px",
   color: "#707070",

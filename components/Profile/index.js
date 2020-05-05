@@ -73,7 +73,6 @@ const areaStyle = {
   height: "100%",
   width: "100%",
   boxShadow: `3px 3px 0px #CBC8C8`,
-  fontFamily: "Kaiti TC",
   padding: "1em",
   overflow: "scroll",
 };

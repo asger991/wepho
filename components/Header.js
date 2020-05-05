@@ -41,7 +41,6 @@ const linkContainerStyle = {
 
 const linkStyle = {
   fontSize: 60,
-  fontFamily: "Kaiti TC",
   textDecoration: "none",
   color: "#373F51",
 };

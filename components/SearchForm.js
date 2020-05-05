@@ -164,7 +164,6 @@ const containerStyle = {
 };
 
 const headlineStyle = {
-  fontFamily: "Kaiti TC",
   fontWeight: "100",
   fontSize: "40px",
   color: "#707070",
@@ -172,7 +171,6 @@ const headlineStyle = {
 };
 
 const subtHeadingStyle = {
-  fontFamily: "Kaiti TC",
   fontWeight: "100",
   fontSize: "20px",
   color: "#707070",
@@ -192,7 +190,6 @@ const inputStyle = {
   // textAlign: "center",
   lineHeight: "55px",
   fontSize: "25px !important",
-  fontFamily: "Kaiti TC",
 };
 
 const buttonStyle = {
@@ -204,7 +201,6 @@ const buttonStyle = {
   textAlign: "center",
   lineHeight: "55px",
   fontSize: "30px",
-  fontFamily: "Kaiti TC",
   border: "none",
   padding: "0",
 };

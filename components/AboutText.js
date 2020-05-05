@@ -33,7 +33,6 @@ const containerStyle = {
 };
 
 const headlineStyle = {
-  fontFamily: "Kaiti TC",
   fontWeight: "100",
   fontSize: "70px",
   color: "#373F51",
@@ -41,7 +40,6 @@ const headlineStyle = {
 
 const textStyle = {
   textAlign: "justify",
-  fontFamily: "Kaiti TC",
   fontSize: "30px",
   lineHeight: "1.3",
 };

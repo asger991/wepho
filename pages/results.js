@@ -1,9 +1,9 @@
-import LayoutContainer from "../components/Layout";
+import Layout from "../components/Layout";
 import SearchBox from "../components/SearchBox";
 import ResultGrid from "../components/ResultGrid";
 
 const SearchResults = () => (
-  <LayoutContainer>
+  <Layout>
     <div
       style={{
         display: `flex`,
@@ -18,7 +18,7 @@ const SearchResults = () => (
     </div>
     <SearchBox text="Dine søgekriterier" />
     <ResultGrid />
-  </LayoutContainer>
+  </Layout>
 );
 
 const headerStyle = {

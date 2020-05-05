@@ -29,9 +29,7 @@ const Profile = () => {
           </div>
         </div>
         <div style={pictures}>
-          <div style={areaStyle}>
-            <Gallery />
-          </div>
+          <div style={areaStyle}>{/* <Gallery /> */}</div>
         </div>
         <div style={bio}>
           <div style={areaStyle}>

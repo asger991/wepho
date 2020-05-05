@@ -1,11 +1,11 @@
-import LayoutContainer from "../components/Layout";
+import Layout from "../components/Layout";
 import Profile from "../components/Profile";
 
 const UserProfile = () => {
   return (
-    <LayoutContainer>
+    <Layout>
       <Profile />
-    </LayoutContainer>
+    </Layout>
   );
 };
 

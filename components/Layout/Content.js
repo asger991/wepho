@@ -1,6 +1,8 @@
-const Page = (props) => <div style={pageStyle}>{props.children}</div>;
+const Content = (props) => {
+  return <div style={containerStyle}>{props.children}</div>;
+};
 
-const pageStyle = {
+const containerStyle = {
   backgroundColor: "#FCFFF7",
   padding: "3rem 10rem",
   height: "100%",
@@ -11,4 +13,4 @@ const pageStyle = {
   marginTop: "180px",
 };
 
-export default Page;
+export default Content;
